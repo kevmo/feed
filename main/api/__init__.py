@@ -6,6 +6,6 @@ from ..settings import APIBaseConfig
 
 def create_app(settings_path=None, settings_override=None):
 
-  app = factory.create_app(__name__, APIBaseConfig)
+  app = factory.create_app(__name__, APIBaseConfig, __path__)
 
   return app
